@@ -12,12 +12,9 @@ binary_tree_t *binary_tree_node(binary_tree_t *parent, int value)
 {
 	binary_tree_t *new;
 
-<<<<<<< HEAD
 	new = malloc(sizeof(binary_tree_t));
 
-=======
 	new = malloc(sizeof(*new));
->>>>>>> fe233739bcbc8261bcb4ea215e81fb42647c8b97
 	if (new == NULL)
 		return (NULL); /* insufficient memory */
 
