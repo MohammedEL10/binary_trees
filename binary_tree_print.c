@@ -50,11 +50,7 @@ static int print_t(const binary_tree_t *tree, int offset, int depth, char **s)
  *
  * Return: The height of the tree starting at @node
  */
-<<<<<<< HEAD:binary_tree_print.c
 static size_t _height(const binary_tree_t *tree)
-=======
-size_t _height(const binary_tree_t *tree)
->>>>>>> f0ea7e649c521b5655f4b373a9c6ccfb2f657671:binary_trees_print.c
 {
 	size_t height_l;
 	size_t height_r;
