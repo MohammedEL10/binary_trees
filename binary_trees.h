@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #ifndef BINARY_TREES_H
 #define BINARY_TREES_H
 
@@ -10,17 +9,6 @@
 #include <unistd.h>
 #include <math.h>
 #include <limits.h>
-=======
-#ifndef _BINARY_TREES_H
-#define _BINARY_TREES_H
-
-#include <stdio.h>
-#include <stddef.h>
-#include <unistd.h>
-#include <stdlib.h>
-#include <limits.h>
-#include <strings.h>
->>>>>>> db4dafabcd7cac7977bac089876f6f949b6ee437
 
 /**
  * struct binary_tree_s - Binary tree node
@@ -66,7 +54,6 @@ int binary_tree_is_full(const binary_tree_t *tree);
 int binary_tree_is_perfect(const binary_tree_t *tree);
 binary_tree_t *binary_tree_sibling(binary_tree_t *node);
 binary_tree_t *binary_tree_uncle(binary_tree_t *node);
-<<<<<<< HEAD
 
 /* Advanced tasks */
 binary_tree_t *binary_trees_ancestor(const binary_tree_t *first,
@@ -103,11 +90,4 @@ int btia_helper(const binary_tree_t *tree, int low, int hi);
 int btih_helper(const binary_tree_t *tree);
 void sata_helper(avl_t **root, int *array, size_t lo, size_t hi);
 
-=======
-void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));
-void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));
-void binary_tree_print(const binary_tree_t *tree);
-size_t _height(const binary_tree_t *tree);
-int print_t(const binary_tree_t *tree, int offset, int depth, char **s);
->>>>>>> db4dafabcd7cac7977bac089876f6f949b6ee437
 #endif
