@@ -6,6 +6,7 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <limits.h>
+#include <strings.h>
 
 /**
  * struct binary_tree_s - Binary tree node
@@ -63,4 +64,7 @@ binary_tree_t *binary_tree_sibling(binary_tree_t *node);
 binary_tree_t *binary_tree_uncle(binary_tree_t *node);
 void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int));
 void binary_tree_postorder(const binary_tree_t *tree, void (*func)(int));
+void binary_tree_print(const binary_tree_t *tree);
+size_t _height(const binary_tree_t *tree);
+int print_t(const binary_tree_t *tree, int offset, int depth, char **s);
 #endif
